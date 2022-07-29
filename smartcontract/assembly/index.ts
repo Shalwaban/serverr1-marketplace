@@ -1,13 +1,8 @@
 import { Product, productsStorage } from './model';
 import { context, ContractPromiseBatch } from "near-sdk-as";
 
-/**
- * 
- * This function changes the state of data in the blockchain. 
- * It is used to issue buy transactions when a product is purchased from a given seller (if the product is available)
- * 
- * @param productId - an identifier of a product that is the subject of purchase
- */
+
+ // buying a product
 export function buyProduct(productId: string): void {
     const product = getProduct(productId);
     if (product == null) {
@@ -56,13 +51,8 @@ export function setProduct(product: Product): void {
     productsStorage.set(product.id, Product.fromPayload(product));
 }
 
-/**
- * 
- * A function that returns a single product for given owner and product id
- * 
- * @param id - an identifier of a product to be returned
- * @returns a product for a given @param id
- */
+
+ // getting a product from the marketplace
 export function getProduct(id: string): Product | null {
     return productsStorage.get(id);
 }
