@@ -1,4 +1,4 @@
-The app is hosted here: [https://dacadeorg.github.io/near-marketplace-dapp/](https://dacadeorg.github.io/near-marketplace-dapp/)
+The app is hosted here: [https://Serverr1.github.io/near-marketplace/](https://Serverr1.github.io/near-marketplace/)
 
 # Getting Started with Create React App
 
