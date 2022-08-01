@@ -101,7 +101,7 @@ const AddProduct = ({ save }) => {
 
             <FloatingLabel
               controlId="enter number of available product"
-              label="Price"
+              label="# Available"
               className="mb-3"
             >
               <Form.Control
